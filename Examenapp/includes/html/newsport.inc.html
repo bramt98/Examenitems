@@ -1,0 +1,36 @@
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Nieuwe sport</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="sport.php" method="POST">
+                    <div class="form-floating mb-3">
+                        <label for="postSport">Sport</label>
+                        <input required type="text" class="form-control" name="postSport" />
+                    </div>
+                    <div class="form-floating mb-3">
+                        <label for="postDocent">Docent: </label>
+                        <input required type="text" class="form-control" name="postDocent" />
+                    </div>
+                    <div class="form-floating mb-3">
+                        <label for="postDeelnemers">Aantal deelnemers: </label>
+                        <input type="number" min="1" class="form-control" name="postDeelnemers" />
+                    </div>
+                    <div class="d-grid">
+                        <button class="d-none" id="createPostForm" name="createPost" class="btn btn-success btn-block text-uppercase fw-bold" type="submit"></button>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button id="createPostModal" type="button" class="btn btn-primary">Maak sport aan</button>
+            </div>
+        </div>
+    </div>
+</div>

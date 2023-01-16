@@ -1,0 +1,26 @@
+<div class="modal fade" id="Inschrijven" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true" value="<?= $viewsport->id ?>">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title text-danger" id="exampleModalLabel">Let op!</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <?php echo $viewsport->id ?>
+                Weet u zeker dat u zich wilt inschrijven voor deze sport?
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Sluit</button>
+                <form action="sport.php" method="post">
+                    <input type="hidden" id="idUser" name="idUser" value="<?= $user->id ?>"/>
+                    <input type="hidden" type="submit" name="submit"
+                           value="<?= $viewsport->id ?>"/>
+                    <button class="btn btn-success">Inschrijven</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

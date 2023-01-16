@@ -1,0 +1,17 @@
+body {
+    background-color: rgba(254, 103, 27, 0.84);
+}
+
+.bg-purple {
+    background-color: rgba(84, 17, 162, 0.88);
+}
+
+.text-orange {
+   color: rgba(254, 103, 27, 0.84);
+}
+
+.container-big {
+    background-color: rgba(84, 17, 162, 0.88);
+}
+
+
